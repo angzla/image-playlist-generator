@@ -4,6 +4,9 @@ TLDR; generates a playlist in Spotify based on image, using CNN trained model on
 # Results: 
 Uses a CNN image model with >60% accuracy trained on CIFAR-10 dataset that ouputs 10 possible classes: 'plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'. Using Spotify APIs and Hugging Face's crossencode genre-picker, inputs image result to find other playlists on Spotify with the same text, and averages similar features (genre, danceability, energy, key, etc.) from songs in existing playlists to create a new playlist.  
 
+# To Run: 
+
+Download notebook, run second model, and download crossencoder pkl (change path in your code) and create your own Spotify project (replace api key).  
 
 # References
 - First image model following this article: https://medium.com/bitgrit-data-science-publication/building-an-image-classification-model-with-pytorch-from-scratch-f10452073212
